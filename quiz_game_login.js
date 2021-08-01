@@ -1,14 +1,11 @@
-<body>
-
-<h4 id="player1_name"></h4> <span id="player1_score"></span>
-<br></br>
-<h4 id="player2_name"></h4> <span id="player2_score"></span>
-
-<div class="container">
-<center>
-    <h2 style="color: white;">The Math Quiz Game!</h2>
-</center>
-
-</div>
-
-</body>
+function addUser()
+{
+    player1_name = document.getElementById("player1_name_input").value;
+    player2_name = document.getElementById("player2_name_input").value;
+  
+    localStorage.setItem("player1_name", player1_name);
+    localStorage.setItem("player2_name", player2_name);
+  
+          window.location = "game_page.html";
+  }
+  
